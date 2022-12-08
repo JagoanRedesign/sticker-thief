@@ -1,11 +1,11 @@
 class Strings:
-    START_MESSAGE = ("Hello there,\n"
-                     "You can use me to create custom stickers packs using existing stickers or PNG files.\n"
+    START_MESSAGE = ("Halo,\n"
+                     "Anda dapat menggunakan saya untuk membuat paket stiker khusus menggunakan stiker yang ada atau file PNG.\n"
                      "\n"
-                     "Main commands:\n"
-                     "/create to create a new pack\n"
-                     "/add to add stickers to an existing pack\n"
-                     "/help for more commands\n")
+                     "Perintah utama:\n"
+                     "/create untuk membuat paket baru\n"
+                     "/add untuk menambahkan stiker ke paket yang sudah ada\n"
+                     "/help untuk perintah lainnya\n")
 
     HELP_MESSAGE = ("<b>Daftar perintah lengkap</b>:\n"
                     "- /create: buat paket baru (paket animasi didukung)\n"
@@ -63,10 +63,10 @@ class Strings:
     PACK_NAME_TOO_LONG = "Maaf, tautan ini terlalu panjang ({}/{}). Coba lagi dengan tautan lain"
 
     PACK_NAME_INVALID = ("<b>Tautan tidak valid</b>. Tautan harus:\n"
-                         "• mulailah dengan huruf\n"
-                         "• terdiri secara eksklusif dari huruf, angka atau garis bawah\n"
-                         "• tidak berisi dua garis bawah berturut-turut\n"
-                         "• tidak diakhiri dengan garis bawah\n"
+                         "â€¢ mulailah dengan huruf\n"
+                         "â€¢ terdiri secara eksklusif dari huruf, angka atau garis bawah\n"
+                         "â€¢ tidak berisi dua garis bawah berturut-turut\n"
+                         "â€¢ tidak diakhiri dengan garis bawah\n"
                          "\n"
                          "Silakan coba lagi")
 
@@ -91,7 +91,7 @@ class Strings:
     PACK_CREATION_FIRST_STICKER_PACK_DATA_MISSING = ("Ooops, ada yang tidak beres.\n"
                                                      "Silakan ulangi proses pembuatan dengan /create")
 
-    PACK_CREATION_WAITING_FIRST_STICKER_INVALID_MESSAGE = ("Umm 🤔 saya sedang menunggu stiker pertama dari paket. "
+    PACK_CREATION_WAITING_FIRST_STICKER_INVALID_MESSAGE = ("Umm ðŸ¤” saya sedang menunggu stiker pertama dari paket. "
                                                            "Tolong kirimkan saya stiker, atau /cancel")
 
     PACK_CREATION_ERROR_DUPLICATE_NAME = ("Maaf, sudah ada paket dengan <a href=\"{}\">tautan ini</a>.\n"
@@ -115,7 +115,7 @@ class Strings:
 
     ADD_STICKER_SELECTED_TITLE_MULTIPLE = ("Sepertinya Anda memiliki banyak paket yang cocok dengan judulnya \"{}\".\n"
                                            "Silakan pilih paket yang ingin Anda pilih dari keyboard di bawah ini. Referensi paket:\n"
-                                           "• {}")
+                                           "â€¢ {}")
 
     ADD_STICKER_PACK_SELECTED_STATIC = ("Bagus, kita akan menambahkan stiker ke <a href=\"{}\">Paket ini</a>.\n"
                                         "Kirimi saya stiker atau file png, atau /cancel")
@@ -130,175 +130,175 @@ class Strings:
                                               "Silakan pilih paket yang valid dari keyboard")
 
     ADD_STICKER_PACK_DATA_MISSING = ("Ooops, ada yang tidak beres.\n"
-                                     "Please repeat the process with /add")
+                                     "Silakan ulangi prosesnya dengan /add")
 
-    ADD_STICKER_PACK_NOT_VALID = ("Ooops, it looks like <a href=\"{}\">this pack</a> doesn't exist.\n"
-                                  "Please select another pack")
+    ADD_STICKER_PACK_NOT_VALID = ("Ups, sepertinya <a href=\"{}\">paket ini</a> tidak ada.\n"
+                                  "Silakan pilih paket lain")
 
-    ADD_STICKER_PACK_NOT_VALID_NO_PACKS = ("Ooops, it looks like <a href=\"{}\">this pack</a> doesn't exist.\n"
-                                           "Please create a new pack with /create")
+    ADD_STICKER_PACK_NOT_VALID_NO_PACKS = ("Ups, sepertinya <a href=\"{}\">paket ini</a> tidak ada.\n"
+                                           "Silakan buat paket baru dengan /create")
 
-    ADD_STICKER_NO_EMOJI_IN_TEXT = ("Uhm, I don't understand. Send me a stickers, or send me a list of emojis to "
-                                    "use for the next stickers (or /done to exit)")
+    ADD_STICKER_NO_EMOJI_IN_TEXT = ("Uhm, saya tidak mengerti. Kirimi saya stiker, atau kirimkan saya daftar emoji ke "
+                                    "Gunakan untuk stiker berikutnya (atau /done untuk keluar)")
 
-    ADD_STICKER_TOO_MANY_EMOJIS = "Whoa, that's a lot of emojis! I can only use 10 at max, please try again"
+    ADD_STICKER_TOO_MANY_EMOJIS = "Wah, itu banyak emoji! Saya hanya dapat menggunakan maksimal 10, silakan coba lagi"
 
-    ADD_STICKER_EMOJIS_SAVED = "Oh, some emojis! We will use these {} emojis for the next stickers you will send me: {}"
+    ADD_STICKER_EMOJIS_SAVED = "Oh, beberapa emoji! Kami akan menggunakan emoji {} ini untuk stiker berikutnya yang akan Anda kirimkan kepada saya: {}"
 
-    ADD_STICKER_SUCCESS = ("Sticker added to <a href=\"{}\">this pack</a>. "
-                           "Continue to send me stickers to add more, use /done when you're done")
+    ADD_STICKER_SUCCESS = ("Stiker ditambahkan ke <a href=\"{}\">paket ini</a>. "
+                           "Terus kirimi saya stiker untuk menambahkan lebih banyak, gunakan /done setelah selesai")
 
-    ADD_STICKER_SUCCESS_EMOJIS = ("Sticker added to <a href=\"{}\">this pack</a> using these emojis: {}\n"
-                                  "Continue to send me stickers to add more, use /done when you're done")
+    ADD_STICKER_SUCCESS_EMOJIS = (" <a href=\"{}\">paket ini</a> menggunakan emoji ini: {}\n"
+                                  "Terus kirimi saya stiker untuk menambahkan lebih banyak, gunakan /done setelah selesai")
 
-    ADD_STICKER_PACK_FULL = ("I'm sorry, <a href=\"{}\">this pack</a> is full ({} stickers), "
-                             "you can no longer add stickers to it. Use /remove to remove some stickers\n"
-                             "You've exited the \"adding stickers\" mode")
+    ADD_STICKER_PACK_FULL = ("Maaf, <a href=\"{}\">paket ini</a> penuh ({} stiker), "
+                             "Anda tidak dapat lagi menambahkan stiker ke dalamnya. Gunakan /remove untuk menghapus beberapa stiker\n"
+                             "Anda telah keluar dari mode \"menambahkan stiker\"")
 
-    ADD_STICKER_SIZE_ERROR = ("Whoops, it looks like an error happened while resizing the stickers. "
-                              "I can't add this stickers to the pack due to wrong resizing logic.\n"
-                              "Send me another stickers, or use /done when you're done")
+    ADD_STICKER_SIZE_ERROR = ("WhUps, sepertinya terjadi kesalahan saat mengubah ukuran stiker. "
+                              "Saya tidak dapat menambahkan stiker ini ke paket karena logika pengubahan ukuran yang salah.\n"
+                              "Kirim saya stiker lain, atau gunakan /done setelah selesai")
 
-    ADD_STICKER_INVALID_ANIMATED = ("It looks like this stickers is no loger compliant with the most recent "
-                                    "<a href=\"https://core.telegram.org/animated_stickers\">Telegram guidelines</a> "
-                                    "about animated stickers. I'm sorry but I can't add it :(\n"
-                                    "You can try to send the stickers again or "
-                                    "send another animated stickers (or /cancel)")
+    ADD_STICKER_INVALID_ANIMATED = ("Sepertinya stiker ini tidak sesuai dengan loger terbaru "
+                                    "<a href=\"https://core.telegram.org/animated_stickers\">Pedoman Telegram</a> "
+                                    "tentang stiker animasi. Maaf tapi saya tidak bisa menambahkannya :(\n"
+                                    "Anda dapat mencoba mengirim stiker lagi atau "
+                                    "mengirim stiker animasi lain (atau /cancel)")
 
     ADD_STICKER_FLOOD_EXCEPTION = ("Uh-oh, it looks like I'm quite busy right now. I cannot create the pack, or "
-                                   "you've been creating too many packs lately. "
-                                   "Please try again in: {} hours")
+                                   "Anda telah membuat terlalu banyak paket akhir-akhir ini. "
+                                   "Silakan coba lagi dalam: {} jam")
 
-    ADD_STICKER_GENERIC_ERROR = ("An error occurred while adding this stickers to <a href=\"{}\">this pack</a>: "
+    ADD_STICKER_GENERIC_ERROR = ("Terjadi kesalahan saat menambahkan stiker ini ke <a href=\"{}\">paket ini</a>: "
                                  "<code>{}</code>.\n"
-                                 "Try again, send me another stickers or use /done when you're done")
+                                 "Coba lagi, kirimi saya stiker lain atau gunakan /done setelah selesai")
 
-    ADD_STICKER_ANIMATED_UNSUPPORTED = ("I am sorry, I do not support animated stickers yet :(\n"
-                                        "Please send a static stickers")
+    ADD_STICKER_ANIMATED_UNSUPPORTED = ("Maaf, saya belum mendukung stiker animasi :(\n"
+                                        "Silakan kirim stiker statis")
 
-    ADD_STICKER_EXPECTING_DIFFERENT_TYPE = ("Uh-oh. I was waiting for a {} stickers, not a {} one. "
-                                            "Please send me a new stickers, or /cancel")
+    ADD_STICKER_EXPECTING_DIFFERENT_TYPE = ("Uh-oh. Saya sedang menunggu stiker {}, bukan stiker {}. "
+                                            "Tolong kirimkan saya stiker baru, atau /cancel")
 
-    ADD_STICKER_INVALID_MESSAGE = "Uhmm 🤔 I was waiting for the stickers to add. Send me a stickers, or /cancel"
+    ADD_STICKER_INVALID_MESSAGE = "Uhmm ðŸ¤” Saya sedang menunggu stiker untuk ditambahkan. Kirimi saya stiker, atau /cancel"
 
-    REMOVE_STICKER_SELECT_STICKER = "Send me the stickers you want to remove from its pack, or /cancel"
+    REMOVE_STICKER_SELECT_STICKER = "Kirimi saya stiker yang ingin Anda hapus dari paketnya, atau /cancel"
 
-    REMOVE_INVALID_MESSAGE = "Please send the stickers you want to remove from its pack, or /cancel"
+    REMOVE_INVALID_MESSAGE = "Silakan kirim stiker yang ingin Anda hapus dari kemasannya, atau /cancel"
 
-    REMOVE_STICKER_SUCCESS = ("Sticker removed from <a href=\"{}\">its pack</a>.\n"
-                              "Send me another stickers to remove, or /done when you're done")
+    REMOVE_STICKER_SUCCESS = ("Stiker dihapus dari <a href=\"{}\">paket ini</a>.\n"
+                              "Kirimi saya stiker lain untuk dihapus, atau /done setelah selesai")
 
-    REMOVE_STICKER_FOREIGN_PACK = ("This stickers is from a <a href=\"{}\">pack</a> you didn't create through me. "
-                                   "Try with a valid stickers, or /done")
+    REMOVE_STICKER_FOREIGN_PACK = ("Stiker ini berasal dari <a href=\"{}\">paket</a> anda tidak berkreasi melalui saya. "
+                                   "Coba dengan stiker yang valid, atau /done")
 
-    REMOVE_STICKER_ALREADY_DELETED = ("This stickers is no longer part of <a href=\"{}\">the pack</a>, "
-                                      "try with another stickers, or /done")
+    REMOVE_STICKER_ALREADY_DELETED = ("Stiker ini tidak lagi menjadi bagian dari <a href=\"{}\">paket ini</a>, "
+                                      "coba dengan stiker lain, atau /done")
 
     REMOVE_STICKER_GENERIC_ERROR = (
-        "An error occurred while removing this stickers from <a href=\"{}\">this pack</a>: "
+        "Terjadi kesalahan saat menghapus stiker ini dari <a href=\"{}\">paket ini</a>: "
         "<code>{}</code>.\n"
-        "Try again, send me another stickers or use /done when you're done")
+        "Coba lagi, kirimi saya stiker lain atau gunakan /selesai setelah selesai")
 
-    READD_WAITING_STICKER = "Please send me a stickers from the pack you " \
-                                         "want to save among the packs I manage.\n" \
-                                         "Please remember that the pack must have been created by me. " \
-                                         "Use /cancel to cancel"
+    READD_WAITING_STICKER = "Tolong kirimkan saya stiker dari paket Anda " \
+                                         "ingin menyimpan di antara paket yang saya kelola.\n" \
+                                         "Harap diingat bahwa paket itu pasti dibuat oleh saya. " \
+                                         "Gunakan /cancel untuk membatalkan"
 
-    READD_STICKER_NO_PACK = "This stickers does not belong to a pack. Please try with another pack, or /cancel"
+    READD_STICKER_NO_PACK = "Stiker ini bukan milik paket. Silakan coba dengan paket lain, atau /cancel"
 
-    READD_STICKER_ANIMATED = "This only works with static (non-animated) stickers packs. Please try with another pack, or /cancel"
+    READD_STICKER_ANIMATED = "Ini hanya berfungsi dengan paket stiker statis (non-animasi). Silakan coba dengan paket lain, atau /cancel"
 
-    READD_UNEXPECTED_MESSAGE = "Uuh, I don't understand what you're trying to say.\n" \
-                               "Please send me the pack name/link of the pack to add (or send me a stickers from the pack), or /cancel"
+    READD_UNEXPECTED_MESSAGE = "Uuh, saya tidak mengerti apa yang Anda coba katakan.\n" \
+                               "Tolong kirimkan saya nama paket / tautan paket untuk ditambahkan (atau kirimkan saya stiker dari paket), atau /cancel"
 
-    READD_WRONG_PACK_NAME = "I'm sorry, it looks like <a href=\"{}\">this pack</a>'s name doesn't end by \"<code>{}</code>\", " \
-                            "therefore I don't own it: you can only add the packs I created. Try with another pack, or /cancel"
+    READD_WRONG_PACK_NAME = "Maaf, sepertinya <a href=\"{}\">paket ini </a>nama tidak diakhiri dengan \"<code>{}</code>\", " \
+                            "oleh karena itu saya tidak memilikinya: Anda hanya dapat menambahkan paket yang saya buat. Coba dengan paket lain, atau /cancel"
 
-    READD_INVALID_PACK_NAME_PATTERN = "I'm sorry, it looks like this name is not a valid pack name. " \
-                                      "A stickers's pack name is what comes after its share link " \
+    READD_INVALID_PACK_NAME_PATTERN = "Maaf, sepertinya nama ini bukan nama paket yang valid. " \
+                                      "Nama paket stiker adalah yang muncul setelah tautan bagikannya " \
                                       "(<code>https://t.me/addstickers/</code> link).\n\n" \
-                                      "Try again with another name/link, or send me a stickers from the pack, " \
+                                      "Coba lagi dengan nama/link lain, atau kirimkan saya stiker dari paket, " \
                                       "or /cancel"
 
-    READD_PACK_EXISTS = "It looks like <a href=\"{}\">this pack</a> is already saved in your packs. " \
-                            "Try with another pack, or /cancel"
+    READD_PACK_EXISTS = "Sepertinya <a href=\"{}\">paket ini</a> sudah disimpan dalam paket Anda. " \
+                            "Coba dengan paket lain, atau /cancel"
 
-    READD_PACK_INVALID = "I'm sorry, it looks like you didn't create <a href=\"{}\">this pack</a> with me " \
-                                  "(or it doesn't exists). " \
-                                  "You can only add packs that were created by me.\n\n" \
-                                  "Try with another pack, or /cancel"
+    READD_PACK_INVALID = "Maaf, sepertinya Anda tidak membuat <a href=\"{}\">paket ini</a> dengan saya " \
+                                  "(atau tidak ada). " \
+                                  "Anda hanya dapat menambahkan paket yang saya buat.\n\n" \
+                                  "Coba dengan paket lain, atau /cancel"
 
-    READD_UNKNOWN_API_EXCEPTION = "I'm sorry, it looks like you didn't create <a href=\"{}\">this pack</a> with me, " \
-                                  "or it doesn't exists (error: <code>{}</code>). " \
-                                  "You can only add packs that were created by me.\n\n" \
-                                  "Try with another pack, or /cancel"
+    READD_UNKNOWN_API_EXCEPTION = "Maaf, sepertinya Anda tidak membuat <a href=\"{}\">paket ini</a> dengan saya, " \
+                                  "atau tidak ada (kesalahan: <code>{}</code>). " \
+                                  "Anda hanya dapat menambahkan paket yang saya buat.\n\n" \
+                                  "Coba dengan paket lain, atau /cancel"
 
-    READD_SAVED = "{} successfully saved to your packs!"
+    READD_SAVED = "{} berhasil disimpan ke paket Anda!"
 
-    READD_DUMMY_STICKER_NOT_REMOVED = "Anyway, to check whether I owned this pack or not, " \
-                                      "I had to add a dummy stickers to the pack, which I haven't been able to remove. " \
-                                      "You can remove it manually using the /remove command"
+    READD_DUMMY_STICKER_NOT_REMOVED = "Bagaimanapun, untuk memeriksa apakah saya memiliki paket ini atau tidak, " \
+                                      "Saya harus menambahkan stiker tiruan ke dalam paket, yang belum dapat saya hapus. " \
+                                      "Anda dapat menghapusnya secara manual menggunakan perintah /remove"
 
-    READD_DUMMY_STICKER_NOT_REMOVED_UNKNOWN = "Anyway, to check whether I owned this pack or not, " \
-                                              "I had to add a dummy stickers to the pack, " \
-                                              "which I haven't been able to remove (<code>{}</code>). " \
-                                              "You can remove it manually using the /remove command"
+    READD_DUMMY_STICKER_NOT_REMOVED_UNKNOWN = "Bagaimanapun, untuk memeriksa apakah saya memiliki paket ini atau tidak, " \
+                                              "Saya harus menambahkan stiker tiruan ke dalam paket, " \
+                                              "yang belum bisa saya hapus (<code>{}</code>). " \
+                                              "Anda dapat menghapusnya secara manual menggunakan perintah /remove"
 
-    FORGETME_SUCCESS = "Success, I've deleted all of your packs from my database"
+    FORGETME_SUCCESS = "Sukses, saya telah menghapus semua paket Anda dari database saya"
 
-    CANCEL = "Good, we're done with that"
+    CANCEL = "Bagus, kita sudah selesai dengan itu"
 
-    CANCEL_NO_CONVERSATION = "There is no operation going on 😴"
+    CANCEL_NO_CONVERSATION = "Tidak ada operasi yang terjadi ðŸ˜´"
 
-    TIMEOUT = "😴 It looks like you are inactive, I've canceled the current operation"
+    TIMEOUT = "ðŸ˜´ Sepertinya Anda tidak aktif, saya telah membatalkan operasi saat ini"
 
-    LIST_NO_PACKS = "You don't have any pack. Use /create to create one"
+    LIST_NO_PACKS = "Anda tidak memiliki paket apa pun. Gunakan /create untuk membuatnya"
 
-    LIST_FOOTER = "\n\n<b>s</b>: static\n<b>a</b>: animated\n<b>v</b>: video"
+    LIST_FOOTER = "\n\n<b>s</b>: statis\n<b>a</b>: animasi\n<b>v</b>: video"
 
-    ANIMATED_STICKERS_NO_FILE = "Unfortunately I can't send you animated stickers back as file :("
+    ANIMATED_STICKERS_NO_FILE = "Sayangnya saya tidak dapat mengirimi Anda stiker animasi kembali sebagai file :("
 
-    EXPORT_PACK_SELECT = "Please send me a sticker from the pack you want to export, or /cancel"
+    EXPORT_PACK_SELECT = "Tolong kirimkan saya stiker dari paket yang ingin Anda ekspor, atau /cancel"
 
-    EXPORT_PACK_NO_PACK = "This stickers doesn't belong to any pack. Please send me a stciker from a pack, or /cancel"
+    EXPORT_PACK_NO_PACK = "Stiker ini bukan milik paket apa pun. Tolong kirimkan saya stciker dari paket, atau /cancel"
 
-    EXPORT_PACK_START = "Exporting stickers from <i>{}</i>... it may take some minutes. Please hold on"
+    EXPORT_PACK_START = "Mengekspor stiker dari <i>{}</i>... mungkin perlu beberapa menit. Harap tunggu"
 
-    EXPORT_PACK_UPLOADING = "Zipping png files and uploading..."
+    EXPORT_PACK_UPLOADING = "Zip file png dan upload..."
 
-    EXPORT_ANIMATED_STICKERS_NOT_SUPPORTED = "Exporting animated packs is not supported yet"
+    EXPORT_ANIMATED_STICKERS_NOT_SUPPORTED = "Mengekspor paket animasi belum didukung"
 
-    EXPORT_SKIPPED_STICKERS = " - I wasn't able to export {} stickers!"
+    EXPORT_SKIPPED_STICKERS = " - Saya tidak bisa mengekspor {} stiker!"
 
-    EXPORT_ONGOING = "Hold on, the export is processing..."
+    EXPORT_ONGOING = "Tunggu, ekspor sedang diproses..."
 
-    CLEANUP_NO_PACK = ("It looks like all your packs are still there. No pack has been removed from the database.\n"
-                       "If you just deleted a pack from @stickers, remember that it might take some time for bots "
-                       "to be made aware of its deletion.\n\n"
-                       "You can use /list to see the list of your packs")
+    CLEANUP_NO_PACK = ("Sepertinya semua paket Anda masih ada. Tidak ada paket yang dihapus dari database.\n"
+                       "Jika Anda baru saja menghapus paket dari @stickers, ingatlah bahwa mungkin perlu waktu untuk bot "
+                       "untuk diberitahu tentang penghapusannya.\n\n"
+                       "Anda dapat menggunakan /list untuk melihat daftar paket Anda")
 
-    CLEANUP_HEADER = "These are the packs that no longer exist and has been removed from the database:\n"
+    CLEANUP_HEADER = "Ini adalah paket yang tidak ada lagi dan telah dihapus dari database:\n"
 
-    CLEANUP_WAIT = "Hold on, this operation might take some time..."
+    CLEANUP_WAIT = "Tunggu, operasi ini mungkin memakan waktu..."
 
     TO_FILE_MIME_TYPE = "mime-type: {}"
 
-    TO_EMOJI_WAITING_STICKER = "Send me a static sticker, " \
-                               "I will send you back a file you can use as custom emoji"
+    TO_EMOJI_WAITING_STICKER = "Kirimi saya stiker statis, " \
+                               "Saya akan mengirimkan kembali file yang dapat Anda gunakan sebagai emoji khusus"
 
-    TO_EMOJI_UNEXPECTED_MESSAGE = "Please send me a <b>static</b> stickers, or /cancel"
+    TO_EMOJI_UNEXPECTED_MESSAGE = "Tolong kirimkan saya stiker <b>statis</b>, atau /cancel"
 
-    TO_EMOJI_NON_STATIC_STICKER = "Animated and video stickers don't need to be resized, you can use " \
-                                  "<code>/tofile</code> to convert an animated/static sticker to a " \
-                                  "cutom emoji-ready file. Use /done when you're done with this command"
+    TO_EMOJI_NON_STATIC_STICKER = "Stiker animasi dan video tidak perlu diubah ukurannya, Anda dapat menggunakan " \
+                                  "<code>/tofile</code> untuk mengonversi stiker animasi/static menjadi " \
+                                  "File emoji-siap cutom. Gunakan /done setelah selesai dengan perintah ini"
 
-    EMOJI_TO_FILE_VIDEO_NOT_SUPPORTED = "Video stickers are not supported 😔"
+    EMOJI_TO_FILE_VIDEO_NOT_SUPPORTED = "Stiker video tidak didukung ðŸ˜”"
 
-    EMOJI_TO_FILE_TOO_MANY_ENTITIES = "Please send just one custom emoji"
+    EMOJI_TO_FILE_TOO_MANY_ENTITIES = "Silakan kirim hanya satu emoji khusus"
 
-    TO_FILE_WAITING_STICKER = "Please send the stickers (static/video) or the custom emoji you want to convert to " \
-                              "file, or /cancel"
+    TO_FILE_WAITING_STICKER = "Silakan kirim stiker (statis / video) atau emoji khusus yang ingin Anda konversi " \
+                              "file, atau /cancel"
 
-    TO_FILE_UNEXPECTED_MESSAGE = "I wasn't expecting that 🤔 please send a stickers or a custom emoji, or use /cancel"
+    TO_FILE_UNEXPECTED_MESSAGE = "Saya tidak mengharapkan itu ðŸ¤” silakan kirim stiker atau emoji khusus, atau gunakan /cancel"
 
-    ENABLED_FLAGS = "Enabled flags: "
+    ENABLED_FLAGS = "Bendera yang diaktifkan: "
