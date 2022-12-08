@@ -17,22 +17,22 @@ logger = logging.getLogger(__name__)
 
 class StickersBot(Updater):
     USERS_COMMANDS = [
-        BotCommand('create', 'create a new stickers pack'),
-        BotCommand('add', 'add stickers to an existing pack'),
-        BotCommand('remove', 'remove stickers from their pack'),
-        BotCommand('list', 'list your packs'),
-        BotCommand('cleanup', 'remove from the database packs deleted from @stickers'),
-        BotCommand('forgetme', 'delete yourself from the database'),
-        BotCommand('export', 'export a pack to a zip file'),
-        BotCommand('readd', 'save a pack created by the bot'),
-        BotCommand('tofile', 'convert stickers and custom emojis to file'),
-        BotCommand('toemoji', 'resize a stickers so it can be used as emoji'),
-        BotCommand('done', 'exit from the current operation'),
-        BotCommand('cancel', 'cancel the current operation'),
+        BotCommand('create', 'buat paket stiker baru'),
+        BotCommand('add', 'menambahkan stiker ke paket yang sudah ada'),
+        BotCommand('remove', 'hapus stiker dari paketnya'),
+        BotCommand('list', 'daftar paket Anda'),
+        BotCommand('cleanup', 'hapus dari paket database yang dihapus dari @stickers'),
+        BotCommand('forgetme', 'menghapus diri anda dari database'),
+        BotCommand('export', 'mengekspor paket ke file zip'),
+        BotCommand('readd', 'menyimpan paket yang dibuat oleh bot'),
+        BotCommand('tofile', 'konversikan stiker dan emoji khusus ke file'),
+        BotCommand('toemoji', 'mengubah ukuran stiker sehingga dapat digunakan sebagai emoji'),
+        BotCommand('done', 'keluar dari operasi saat ini'),
+        BotCommand('cancel', 'membatalkan operasi saat ini'),
     ]
 
     ADMINS_COMMANDS = [
-        BotCommand('count', 'see the size of your packs'),  # still "experimental"
+        BotCommand('count', 'melihat ukuran paket anda'),  # still "experimental"
     ]
 
     @staticmethod
