@@ -7,129 +7,129 @@ class Strings:
                      "/add to add stickers to an existing pack\n"
                      "/help for more commands\n")
 
-    HELP_MESSAGE = ("<b>Full commands list</b>:\n"
-                    "- /create: create a new pack (animated packs are supported)\n"
-                    "- /add: add a stickers to a pack\n"
-                    "- /remove: remove a stickers from its pack\n"
-                    "- send me a stickers and I will send you its png back\n"
-                    "- /list: list your packs (max 100 entries)\n"
-                    "- /export: export a stickers pack as a zip of png files\n"
-                    "- /forgetme: delete yourself from my database. The packs you created will <b>not</b> be deleted from Telegram\n"
-                    "- /readd <code>pack link</code>: save a pack created through the bot, but that for some reasons does not appear in your list\n"
-                    "- /cleanup: remove from the list of your packs all the packs that you have deleted using @stickers\n"
-                    "- /tofile: convert stickers and custom emojis to file\n"
-                    "- /toemoji: resize a static stickers so it can be added to a custom emojis pack\n"
+    HELP_MESSAGE = ("<b>Daftar perintah lengkap</b>:\n"
+                    "- /create: buat paket baru (paket animasi didukung)\n"
+                    "- /add: tambahkan stiker ke paket\n"
+                    "- /remove: hapus stiker dari paket\n"
+                    "- kirimkan saya stiker dan saya akan mengirimkan png-nya kembali\n"
+                    "- /list: daftar paket Anda (maks 100 entri)\n"
+                    "- /export: ekspor paket stiker sebagai zip file png\n"
+                    "- /forgetme: hapus diri Anda dari basis data saya. Paket yang Anda buat <b>tidak</b> akan dihapus dari Telegram\n"
+                    "- /readd <code>paket link</code>: menyimpan paket yang dibuat melalui bot, tetapi karena beberapa alasan tidak muncul dalam daftar Anda\n"
+                    "- /cleanup: hapus dari daftar paket Anda semua paket yang telah Anda hapus menggunakan @stickers\n"
+                    "- /tofile: konversi stiker dan emoji khusus ke file\n"
+                    "- /toemoji: mengubah ukuran stiker statis sehingga dapat ditambahkan ke paket emoji khusus\n"
                     "\n"
-                    "<b>Other operations</b>\n"
-                    "You can delete a pack, change a stickers's emojis, change stickers order and see a stickers/pack stats from @stickers\n"
+                    "<b>Operasi lainnya</b>\n"
+                    "Anda dapat menghapus paket, mengubah emoji stiker, mengubah urutan stiker, dan melihat statistik stiker / paket dari @stickers\n"
                     "\n"
                     "<b>Tips</b>:\n"
-                    "- when adding a stickers, you can set its emojis by sending them before sending the stickers\n"
-                    "- when adding a stickers or creating a pack, you can either pass a stickers or a png file\n"
-                    "- when adding a stickers as png, you can pass its emojis in the caption\n"
-                    "- /tofile supports a <code>-png</code> flag: it will make the bot send static stickers/emojis "
-                    "as png instead of webp\n"
-                    "- /toemoji supports the following flags: <code>-c</code> (will crop away the transparent space "
-                    "at the image's borders) and <code>-r</code> (will not maintain the image's aspect rateo if "
-                    "it's not square)\n"
+                    "- Saat menambahkan stiker, Anda dapat mengatur emojinya dengan mengirimkannya sebelum mengirim stiker\n"
+                    "- Saat menambahkan stiker atau membuat paket, Anda dapat meneruskan stiker atau file PNG\n"
+                    "- Saat menambahkan stiker sebagai PNG, Anda dapat meneruskan emojinya di keterangan\n"
+                    "- /tofile mendukung emoji bendera <code>-png</code>: itu akan membuat bot mengirim stiker statis/emojis "
+                    "sebagai png alih-alih webp\n"
+                    "- /toemoji mendukung bendera berikut: <code>-c</code> (akan memotong ruang transparan "
+                    "pada batas gambar) dan <code>-r</code> (tidak akan mempertahankan rasio aspek gambar jika "
+                    "itu tidak persegi)\n"
                     "\n"
-                    "<b>Other info</b>\n"
-                    "All the packs you create with me have their links ending by \"_by_{}\". This is not made on purpose, "
-                    "but something forced by Telegram\n"
+                    "<b>Info lainnya</b>\n"
+                    "Semua paket yang Anda buat dengan saya memiliki tautan yang diakhiri oleh \"_by_{}\". Ini tidak dibuat dengan sengaja, "
+                    "tapi sesuatu yang dipaksakan oleh Telegram\n"
                     "\n"
-                    "<b>Correct way of building your own custom pack</b>\n"
-                    "Use @MyPackBot. It doesn't steal stickers like I do. It's blazing fast too. Really suggested")
+                    "<b>Cara yang benar untuk membangun paket kustom Anda sendiri</b>\n"
+                    "Gunakan @MyPackBot. Itu tidak mencuri stiker seperti saya. Ini juga sangat cepat. Benar-benar disarankan")
 
-    PACK_CREATION_WAITING_TITLE = ("Alright, a new stickers pack! Select the pack type with the buttons below "
-                                   "and <b>send me the pack title</b> (must not exceed 64 characters).\n\n"
-                                   "Use /cancel to cancel")
+    PACK_CREATION_WAITING_TITLE = ("Baiklah, paket stiker baru! Pilih jenis paket dengan tombol di bawah ini "
+                                   "dan <b>kirimkan saya judul paket</b> (tidak boleh melebihi 64 karakter).\n\n"
+                                   "Gunakan /cancel untuk membatalkan")
 
-    PACK_CREATION_ANIMATED_WAITING_TITLE = ("Alright, a new animated pack! Please send me the pack title "
-                                            "(must not exceed 64 characters).\n"
-                                            "Use /cancel to cancel")
+    PACK_CREATION_ANIMATED_WAITING_TITLE = ("Baiklah, paket animasi baru! Tolong kirimkan saya judul paket "
+                                            "(tidak boleh melebihi 64 karakter).\n"
+                                            "Gunakan /cancel untuk membatalkan")
 
-    PACK_TITLE_TOO_LONG = "I'm sorry, the title must be at max 64 characters long. Try with another title"
+    PACK_TITLE_TOO_LONG = "Maaf, judulnya harus max 64 karakter. Coba dengan judul lain"
 
-    PACK_TITLE_CONTAINS_NEWLINES = "I'm sorry, the title must be a single line (no newline characters)"
+    PACK_TITLE_CONTAINS_NEWLINES = "Maaf, judulnya harus satu baris (tidak ada karakter baris baru)"
 
-    PACK_TITLE_INVALID_MESSAGE = ("Oh no! This is not what I was waiting for! Please send me the "
-                                  "pack title, or /cancel")
+    PACK_TITLE_INVALID_MESSAGE = ("Oh tidak! Ini bukan yang saya tunggu! Tolong kirimkan saya "
+                                  "judul paket, atau /cancel")
 
-    PACK_CREATION_WAITING_NAME = ("Good, this is going to be the pack title: <i>{}</i>\n"
+    PACK_CREATION_WAITING_NAME = ("Bagus, ini akan menjadi judul paket: <i>{}</i>\n"
                                   "\n"
-                                  "Please send me what will be the pack link (must be at max {} characters long. "
-                                  "<b>Doesn't</b> need to include <code>https://t.me/addstickers/</code>)")
+                                  "Tolong kirimkan saya apa yang akan menjadi tautan paket (harus maksimal {} karakter. "
+                                  "<b>Tidak</b> perlu menyertakan <code>https://t.me/addstickers/</code>)")
 
-    PACK_NAME_TOO_LONG = "I'm sorry, this link is too long ({}/{}). Try again with another link"
+    PACK_NAME_TOO_LONG = "Maaf, tautan ini terlalu panjang ({}/{}). Coba lagi dengan tautan lain"
 
-    PACK_NAME_INVALID = ("<b>Invalid link</b>. A link must:\n"
-                         "• start with a letter\n"
-                         "• consist exclusively of letters, digits or underscores\n"
-                         "• not contain two consecutive underscores\n"
-                         "• not end with an underscore\n"
+    PACK_NAME_INVALID = ("<b>Tautan tidak valid</b>. Tautan harus:\n"
+                         "• mulailah dengan huruf\n"
+                         "• terdiri secara eksklusif dari huruf, angka atau garis bawah\n"
+                         "• tidak berisi dua garis bawah berturut-turut\n"
+                         "• tidak diakhiri dengan garis bawah\n"
                          "\n"
-                         "Please try again")
+                         "Silakan coba lagi")
 
-    PACK_NAME_INVALID_MESSAGE = ("Oh no! This is not what I was waiting for! Please send me the "
-                                 "pack link, or /cancel")
+    PACK_NAME_INVALID_MESSAGE = ("Oh tidak! Ini bukan yang saya tunggu! Tolong kirimkan saya "
+                                 "tautan paket, atau /cancel")
 
-    PACK_NAME_DUPLICATE = "I'm sorry, you already have a pack with this link saved. try with another link"
+    PACK_NAME_DUPLICATE = "Maaf, Anda sudah memiliki paket dengan tautan ini disimpan. coba dengan tautan lain"
 
-    PACK_TYPE_BUTTONS_EXPIRED = "These buttons are no longer valid"
+    PACK_TYPE_BUTTONS_EXPIRED = "Tombol-tombol ini tidak lagi valid"
 
-    PACK_TYPE_CHANGED = "Pack type: {}. Now send me the pack title!"
+    PACK_TYPE_CHANGED = "Jenis paket: {}. Sekarang kirimkan saya judul paket!"
 
-    PACK_CREATION_WAITING_FIRST_STATIC_STICKER = ("Got it, we are almost done. Now send me the first stickers "
-                                                  "of the pack (or a png file, or the emojis to use for the stickers)")
+    PACK_CREATION_WAITING_FIRST_STATIC_STICKER = ("Mengerti, kita hampir selesai. Sekarang kirimkan saya stiker pertama "
+                                                  "paket (atau file png, atau emoji yang digunakan untuk stiker)")
 
-    PACK_CREATION_WAITING_FIRST_ANIMATED_STICKER = ("Got it, we are almost done. Now send me the first animated "
-                                                    "stickers of the pack (or the emojis to use for the stickers)")
+    PACK_CREATION_WAITING_FIRST_ANIMATED_STICKER = ("Mengerti, kita hampir selesai. Sekarang kirimkan saya animasi pertama "
+                                                    "stiker paket (atau emoji yang digunakan untuk stiker)")
 
-    PACK_CREATION_WAITING_FIRST_VIDEO_STICKER = ("Got it, we are almost done. Now send me the first video "
-                                                    "stickers of the pack (or the emojis to use for the stickers)")
+    PACK_CREATION_WAITING_FIRST_VIDEO_STICKER = ("Mengerti, kita hampir selesai. Sekarang kirimkan saya video pertama "
+                                                    "stiker paket (atau emoji yang digunakan untuk stiker)")
 
-    PACK_CREATION_FIRST_STICKER_PACK_DATA_MISSING = ("Ooops, something went wrong.\n"
-                                                     "Please repeat the creation process with /create")
+    PACK_CREATION_FIRST_STICKER_PACK_DATA_MISSING = ("Ooops, ada yang tidak beres.\n"
+                                                     "Silakan ulangi proses pembuatan dengan /create")
 
-    PACK_CREATION_WAITING_FIRST_STICKER_INVALID_MESSAGE = ("Uhmm 🤔 I was waiting for the first stickers of the pack. "
-                                                           "Please send me a stickers, or /cancel")
+    PACK_CREATION_WAITING_FIRST_STICKER_INVALID_MESSAGE = ("Umm 🤔 saya sedang menunggu stiker pertama dari paket. "
+                                                           "Tolong kirimkan saya stiker, atau /cancel")
 
-    PACK_CREATION_ERROR_DUPLICATE_NAME = ("I'm sorry, there's already a pack with <a href=\"{}\">this link</a>.\n"
+    PACK_CREATION_ERROR_DUPLICATE_NAME = ("Maaf, sudah ada paket dengan <a href=\"{}\">tautan ini</a>.\n"
                                           "Please send me a new link, or /cancel")
 
-    PACK_CREATION_ERROR_INVALID_NAME = ("I'm sorry, Telegram rejected the link you provided saying it's not valid.\n"
-                                        "Please send a me new link, or /cancel")
+    PACK_CREATION_ERROR_INVALID_NAME = ("Maaf, Telegram menolak tautan yang Anda berikan dengan mengatakan itu tidak valid.\n"
+                                        "Silakan kirim tautan baru kepada saya, atau /cancel")
 
-    PACK_CREATION_ERROR_GENERIC = ("Error while trying to create the pack: <code>{}</code>.\n"
-                                   "Please try again, or /cancel")
+    PACK_CREATION_ERROR_GENERIC = ("Kesalahan saat mencoba membuat paket: <code>{}</code>.\n"
+                                   "Silakan coba lagi, atau /cancel")
 
-    PACK_CREATION_PACK_CREATED = ("Your pack has been created, add it through <a href=\"{}\">this link</a>\n"
-                                  "Continue to send me stickers to add more, or /done")
+    PACK_CREATION_PACK_CREATED = ("Paket Anda telah dibuat, tambahkan melalui <a href=\"{}\">tautan ini</a>\n"
+                                  "Terus kirimi saya stiker untuk menambahkan lebih banyak, atau /done")
 
-    ADD_STICKER_SELECT_PACK = "Select the pack you want to add stickers to, or /cancel"
+    ADD_STICKER_SELECT_PACK = "Pilih paket yang ingin Anda tambahkan stiker, atau /cancel"
 
-    ADD_STICKER_NO_PACKS = "You don't have any pack yet. Use /create to start creating a new pack"
+    ADD_STICKER_NO_PACKS = "Anda belum memiliki paket apa pun. Pakai /create untuk mulai membuat paket baru"
 
-    ADD_STICKER_SELECTED_TITLE_DOESNT_EXIST = ("It seems like the pack \"{}\" doesn't exist.\n"
-                                               "Please select a valid pack from the keyboard")
+    ADD_STICKER_SELECTED_TITLE_DOESNT_EXIST = ("Sepertinya paketnya \"{}\" tidak ada.\n"
+                                               "Silakan pilih paket yang valid dari keyboard")
 
-    ADD_STICKER_SELECTED_TITLE_MULTIPLE = ("It seems like you have multiple packs that match the title \"{}\".\n"
-                                           "Please select the pack you want to choose from the keyboard below. Packs reference:\n"
+    ADD_STICKER_SELECTED_TITLE_MULTIPLE = ("Sepertinya Anda memiliki banyak paket yang cocok dengan judulnya \"{}\".\n"
+                                           "Silakan pilih paket yang ingin Anda pilih dari keyboard di bawah ini. Referensi paket:\n"
                                            "• {}")
 
-    ADD_STICKER_PACK_SELECTED_STATIC = ("Good, we are going to add stickers to <a href=\"{}\">this pack</a>.\n"
-                                        "Send me a stickers or a png file, or /cancel")
+    ADD_STICKER_PACK_SELECTED_STATIC = ("Bagus, kita akan menambahkan stiker ke <a href=\"{}\">Paket ini</a>.\n"
+                                        "Kirimi saya stiker atau file png, atau /cancel")
 
-    ADD_STICKER_PACK_SELECTED_ANIMATED = ("Good, we are going to add stickers to <a href=\"{}\">this pack</a>.\n"
-                                          "Send me an animated stickers, or /cancel")
+    ADD_STICKER_PACK_SELECTED_ANIMATED = ("Bagus, kita akan menambahkan stiker ke <a href=\"{}\">Paket ini</a>.\n"
+                                          "Kirimi saya stiker animasi, atau /cancel")
 
-    ADD_STICKER_PACK_SELECTED_VIDEO = ("Good, we are going to add stickers to <a href=\"{}\">this pack</a>.\n"
-                                          "Send me a video stickers or a webp file, or /cancel")
+    ADD_STICKER_PACK_SELECTED_VIDEO = ("Bagus, kita akan menambahkan stiker ke <a href=\"{}\">Paket ini</a>.\n"
+                                          "Kirimi saya stiker video atau file webp, atau /cancel")
 
-    ADD_STICKER_SELECTED_NAME_DOESNT_EXIST = ("It seems like the pack \"{}\" doesn't exist.\n"
-                                              "Please select a valid pack from the keyboard")
+    ADD_STICKER_SELECTED_NAME_DOESNT_EXIST = ("Sepertinya paketnya \"{}\" tidak ada.\n"
+                                              "Silakan pilih paket yang valid dari keyboard")
 
-    ADD_STICKER_PACK_DATA_MISSING = ("Ooops, something went wrong.\n"
+    ADD_STICKER_PACK_DATA_MISSING = ("Ooops, ada yang tidak beres.\n"
                                      "Please repeat the process with /add")
 
     ADD_STICKER_PACK_NOT_VALID = ("Ooops, it looks like <a href=\"{}\">this pack</a> doesn't exist.\n"
