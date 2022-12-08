@@ -26,7 +26,7 @@ from ...utils import utils
 
 logger = logging.getLogger(__name__)
 
-PACK_SUFFIX = f"_by_{stickersbot.bot.username}"
+PACK_SUFFIX = f"_{stickersbot.bot.username}"
 
 DUMMY_EMOJI = "🧱"  # possibly an emoji that nobody would use
 
@@ -66,7 +66,7 @@ def process_pack(sticker: Sticker, update: Update, context: CallbackContext):
             add_sticker_to_set_kwargs[add_request_file_kwarg] = f
             context.bot.add_sticker_to_set(**add_sticker_to_set_kwargs)
 
-        logger.debug("successfully added dummy stickers to pack <%s>", sticker.set_name)
+        logger.debug("berhasil menambahkan stiker dummy ke dalam kemasan <%s>", sticker.set_name)
     except (TelegramError, BadRequest) as e:
         error_message = e.message.lower()
         if "stickerset_invalid" in error_message:
