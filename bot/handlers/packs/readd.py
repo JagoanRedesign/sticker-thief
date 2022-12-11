@@ -26,7 +26,7 @@ from ...utils import utils
 
 logger = logging.getLogger(__name__)
 
-PACK_SUFFIX = f"_{stickersbot.bot.username}"
+PACK_SUFFIX = f"_by_{stickersbot.bot.username}"
 
 DUMMY_EMOJI = "🧱"  # possibly an emoji that nobody would use
 
